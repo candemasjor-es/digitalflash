@@ -3,8 +3,13 @@
 {% block title %}Hello IndexController!{% endblock %}
 
 {% block body %}
+{% block javascripts %}
+<script type="application/javascript">
+document.getElementsByTagName('video')[0].webkitEnterFullscreen();
+</script
+{% endblock %}
 <div class="container">
-<video autoplay muted playsinline>
+<video width="100%" autoplay muted playsinline>
     <source src="https://www.digital-flash.es/FOTOVIDEOS/Voltereta_1.mp4" type="video/mp4" />
 </video>
 </div>
